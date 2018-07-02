@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block main %}
+    {{ include('home/slide.html.twig') }}
+    {{ include('home/overview.html.twig') }}
+
+{%  endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
