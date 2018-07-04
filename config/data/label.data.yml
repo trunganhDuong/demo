@@ -1,0 +1,15 @@
+parameters:
+    labelData:
+        projectName: 'Tên dự án'
+        owner: 'Chủ đầu tư'
+        address: 'Vị trí'
+        totalArea: 'Tổng diện tích'
+        publicArea: 'Diện tích công cộng'
+        educationArea: 'Diện tích cho giáo dục'
+        residenceArea: 'Diện tích đất ở'
+        transportationArea: 'Diện tích cho giao thông'
+        density: 'Mật độ xây dựng'
+        lakeArea: 'Diện tích hồ điều hòa'
+        apartments : 'Số lượng căn hộ'
+        architectureType: 'Thiết kế'
+        deployExpectation: 'Thời gian bàn giao dự kiến'

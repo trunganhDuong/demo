@@ -33,31 +33,34 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col">
-                            <strong>Hot-line: 0123456789</strong>
+                            <strong>Hotline: {{ contactData.getHotline() }}</strong>
                         </div>
                     </div>
 
                     <div class="row">
+                        {% if contactData.getFacebook() != "" %}
                         <div class="col-2">
-                            <a href="#">
+                            <a href="{{ contactData.getFacebook() }}">
                                 <img class="icon" src="{{ asset('images/facebook.png') }}"/>
                             </a>
                         </div>
+                        {% endif %}
+
+                        {% if contactData.getYoutube() != "" %}
                         <div class="col-2">
-                            <a href="#">
+                            <a href="{{ contactData.getYoutube() }}">
                                 <img class="icon" src="{{ asset('images/google.png') }}"/>
                             </a>
                         </div>
+                        {% endif %}
+
+                        {% if contactData.getInstagram() != "" %}
                         <div class="col-2">
-                            <a href="#">
+                            <a href="{{ contactData.getInstagram() }}">
                                 <img class="icon" src="{{ asset('images/instagram.png') }}"/>
                             </a>
                         </div>
-                        <div  class="col-2">
-                            <a href="#">
-                                <img class="icon" src="{{ asset('images/pinterest.png') }}"/>
-                            </a>
-                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>

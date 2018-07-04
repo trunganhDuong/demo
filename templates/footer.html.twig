@@ -3,16 +3,16 @@
         <div id="contact">
             <h5 class="display-5">Liên hệ</h5>
             <div>
-                <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;Đường Trung Anh
+                <i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ contactData.getName() }}
             </div>
             <div>
-                <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;Tòa nhà Handico, Nam Từ Liêm, Hà Nội
+                <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ contactData.getAddress() }}
             </div>
             <div>
-                <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;trung.anh.duong.1995@gmail.com
+                <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ contactData.getMail() }}
             </div>
             <div>
-                <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;0977.849.974
+                <i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ contactData.getTelephone() }}
             </div>
         </div>
     </div>

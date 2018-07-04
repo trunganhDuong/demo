@@ -1,13 +1,13 @@
-#overview{
+#facilities{
     margin: 2.3em auto;
     height: auto;
 }
 
-#overview-content{
+#facilities-content{
     margin-top: 1em;
 }
 
-#overview-content-container{
+#facilities-content-container{
     margin-top: 2em;
 }
 
@@ -46,27 +46,27 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #overview-content-container{
+    #facilities-content-container{
         overflow: auto;
     }
 
-    #overview-content{
+    #facilities-content{
         width: 100%;
         float:left;
         margin: 1.5em auto;
     }
 
-    #overview-image{
+    #facilities-image{
         width: 100%;
         float:right;
         margin: 1.5em auto;
     }
 
-    #overview-image-content img{
+    #facilities-image-content img{
         width: 100%;
     }
 
-    #overview-image-content{
+    #facilities-image-content{
         width: 100%;
     }
 
@@ -77,27 +77,27 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #overview-content-container{
+    #facilities-content-container{
         overflow: auto;
     }
 
-    #overview-content{
+    #facilities-content{
         width: 100%;
         float:left;
         margin: 1.5em auto;
     }
 
-    #overview-image{
+    #facilities-image{
         width: 100%;
         float:right;
         margin: 1.5em auto;
     }
 
-    #overview-image-content img{
+    #facilities-image-content img{
         width: 100%;
     }
 
-    #overview-image-content{
+    #facilities-image-content{
         width: 100%;
     }
 
@@ -108,27 +108,27 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #overview-content-container{
+    #facilities-content-container{
         overflow: auto;
     }
 
-    #overview-content{
+    #facilities-content{
         width: 100%;
         float:left;
         margin: 1.5em auto;
     }
 
-    #overview-image{
+    #facilities-image{
         width: 100%;
         float:right;
         margin: 1.5em auto;
     }
 
-    #overview-image-content img{
+    #facilities-image-content img{
         width: 100%;
     }
 
-    #overview-image-content{
+    #facilities-image-content{
         width: 100%;
     }
 
@@ -139,27 +139,27 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #overview-content-container{
+    #facilities-content-container{
         overflow: auto;
     }
 
-    #overview-content{
+    #facilities-content{
         width: 100%;
         float:left;
         margin: 1.5em auto;
     }
 
-    #overview-image{
+    #facilities-image{
         width: 100%;
         float:right;
         margin: 1.5em auto;
     }
 
-    #overview-image-content{
+    #facilities-image-content{
         width: 100%;
     }
 
-    #overview-image-content img{
+    #facilities-image-content img{
         width: 100%;
     }
 
@@ -170,17 +170,17 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    #overview-content-container{
+    #facilities-content-container{
         overflow: auto;
     }
 
-    #overview-content{
-        width: 50%;
-        float:left;
+    #facilities-content{
+        width: 40%;
+        float:right;
     }
 
-    #overview-image{
+    #facilities-image{
         width: 50%;
-        float:right;
+        float:left;
     }
 }

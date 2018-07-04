@@ -1,0 +1,16 @@
+parameters:
+    projectData:
+        projectName: '%env(PROJECT_NAME)%'
+        owner: '%env(OWNER)%'
+        address: '%env(ADDRESS)%'
+        scale:
+            totalArea: '%env(TOTAL_AREA)%'
+            publicArea: '%env(PUBLIC_AREA)%'
+            educationArea: '%env(EDUCATION_AREA)%'
+            residenceArea: '%env(RESIDENCE_AREA)%'
+            transportationArea: '%env(TRANSPORTATION_AREA)%'
+            density: '%env(DENSITY)%'
+            lakeArea: '%env(LAKE_AREA)%'
+            apartments : '%env(APARTMENTS)%'
+        architectureType: '%env(ARCHITECTURE_TYPE)%'
+        deployExpectation: '%env(DEPLOY_EXPECTATION)%'

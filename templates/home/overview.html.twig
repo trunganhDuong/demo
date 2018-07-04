@@ -1,142 +1,83 @@
 <div id="overview" class="container">
     <div class="row section-header">
-        <h1 class="section-label display-4">TỔNG QUAN DỰ ÁN</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000" class="section-label display-4">TỔNG QUAN DỰ ÁN</h1>
     </div>
     <div id="overview-content-container">
-        <div id="overview-content" class="container-fluid">
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Tên dự án</h6>
+        <div data-aos="fade-left" data-aos-duration="1000" id="overview-content" class="container-fluid">
+            {% if projectData.getProjectName() != "" %}
+                <div class="row">
+                    <div class="col-5">
+                        <p class="italic small-text">{{ labelData.projectName }}</p>
+                    </div>
+                    <div class="col-7">
+                        <p><em><strong>{{ projectData.getProjectName() }}</strong></em></p>
+                    </div>
                 </div>
-                <div class="col-7">
-                    <h6 class="italic"><strong>Tên dự án</strong></h6>
+            {% endif %}
+
+            {% if projectData.getOwner() != "" %}
+                <div class="row">
+                    <div class="col-5">
+                        <p class="italic small-text">{{ labelData.owner }}</p>
+                    </div>
+                    <div class="col-7">{{ projectData.getOwner() }}</div>
                 </div>
-            </div>
+            {% endif %}
+
+            {% if projectData.getAddress() != "" %}
+                <div class="row">
+                    <div class="col-5">
+                        <p class="italic small-text">{{ labelData.address }}</p>
+                    </div>
+                    <div class="col-7">
+                        {{ projectData.getAddress() }}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if projectData.getScale().getTotalArea() != "" %}
+                <div class="row">
+                    <div class="col-5">
+                        <p class="italic small-text">{{ labelData.totalArea }}</p>
+                    </div>
+                    <div class="col-7">
+                        {{ projectData.getScale().getTotalArea() }} m2
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if projectData.getArchitectureType() != "" %}
+                <div class="row">
+                    <div class="col-5">
+                        <p class="italic small-text">{{ labelData.architectureType }}</p>
+                    </div>
+                    <div class="col-7">
+                        {{ projectData.getArchitectureType() }}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if projectData.getDeployExpectation() != "" %}
+                <div class="row">
+                    <div class="col-5">
+                        <p class="italic small-text">{{ labelData.deployExpectation }}</p>
+                    </div>
+                    <div class="col-7">
+                        {{ projectData.getDeployExpectation() }}
+                    </div>
+                </div>
+            {% endif %}
 
             <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Chủ đầu tư</h6>
-                </div>
-                <div class="col-7">
-                    Chủ đầu tư
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Vị trí</h6>
-                </div>
-                <div class="col-7">
-                    Hà Nội
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Tổng diện tích</h6>
-                </div>
-                <div class="col-7">
-                    X m2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Diện tích cho công cộng</h6>
-                </div>
-                <div class="col-7">
-                    Y m2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Diện tích cho trường học</h6>
-                </div>
-                <div class="col-7">
-                    Z m2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Diện tích đất ở</h6>
-                </div>
-                <div class="col-7">
-                    W m2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Diện tích cho giao thông</h6>
-                </div>
-                <div class="col-7">
-                    A m2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Mật độ xây dựng</h6>
-                </div>
-                <div class="col-7">
-                    A%
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Diện tích hồ điều hòa</h6>
-                </div>
-                <div class="col-7">
-                    C ha
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Số lượng căn hộ</h6>
-                </div>
-                <div class="col-7">
-                    <p>
-                        - 11 căn biệt thự đơn lập, diện tích đất 380-416m2
-                    </p>
-                    <p>
-                        - 600 căn nhà vườn song lập, diện tích đất 120-250m2
-                    </p>
-                    <p>
-                        - 115 căn nhà liền kề, diện tích đất 92m2, diện tích sàn xây dựng 221m2
-                    </p>
-                    <p>
-                        - 72 căn nhà phố thương mại, diện tích đất 90m2, diện tích sàn xây dựng 243,43m2
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Kiến trúc</h6>
-                </div>
-                <div class="col-7">
-                    Kiến trúc
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-5">
-                    <h6 class="italic small-text">Thời gian bàn giao dự kiến</h6>
-                </div>
-                <div class="col-7">
-                    03/2018
+                <div class="col">
+                    <a href="#">Chi tiết >>></a>
                 </div>
             </div>
         </div>
 
-        <div id="overview-image" class="">
+        <div data-aos="fade-right" data-aos-duration="1000" id="overview-image" class="">
             <div id="overview-image-content">
                 <img class="img-thumbnail overview-img" src="{{ asset('images/space.jpg') }}"/>
-                <img class="img-thumbnail overview-img" src="{{ asset('images/space2.jpg') }}"/>
             </div>
         </div>
     </div>
