@@ -1,8 +1,16 @@
 /* Your custom css code goes here */
 
+.probootstrap-footer {
+    padding: 3em 0 3em 0;
+    background: #17f54d;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
 .signup-for-document{
     background-color: white;
-    opacity: 0.9;
+    opacity: 0.95;
     padding: 1em;
     position: fixed;
     bottom: 0;
