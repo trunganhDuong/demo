@@ -12,33 +12,5 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TestController extends Controller
 {
-	/**
-	 * @var ScaleConverter
-	 */
-	private $scaleConverter;
-	/**
-	 * @var ProjectDataConverter
-	 */
-	private $projectDataConverter;
-	
-	public function __construct(ProjectDataConverter$projectDataConverter,ScaleConverter $scaleConverter, ContainerInterface $container)
-	{
-		$this->scaleConverter = $scaleConverter;
-		$this->container = $container;
-		$this->projectDataConverter = $projectDataConverter;
-	}
-	
-	/**
-	 * @Route("/test")
-	 *
-	 */
-	public function test()
-	{
-		echo '<pre>';
-		print_r($this->projectDataConverter->convert());
-		echo '</pre>';
-		
-		return new Response();
-	}
-	
+
 }

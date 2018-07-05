@@ -1,0 +1,47 @@
+/* Your custom css code goes here */
+
+.signup-for-document{
+    background-color: white;
+    opacity: 0.9;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    right:1em;
+    border-radius: 5px;
+}
+
+.signup-for-document form{
+    margin-top: 1em;
+    width: 250px;
+}
+
+.before-minimize{
+    display:none;
+}
+.minimized:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px){
+    .signup-header{
+        height: 15px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .signup-header{
+        height: 10px;
+        line-height: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .signup-header{
+        height: 10px;
+        line-height: 10px;
+    }
+}
+
+
+

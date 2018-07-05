@@ -9,24 +9,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class HomeController extends Controller
 {
-	/**
-	 * @var ProjectDataConverter
-	 */
-	private $projectDataConverter;
-	/**
-	 * @var ContactConverter
-	 */
-	private $contactConverter;
+
 	
-	public function __construct(ProjectDataConverter $projectDataConverter, ContactConverter $contactConverter)
+	public function __construct()
 	{
-		$this->projectDataConverter = $projectDataConverter;
-		$this->contactConverter = $contactConverter;
+
 	}
 	
 	public function index()
 	{
-		$html = $this->renderView('home/home.html.twig');
+		$html = $this->renderView('homepage/home.html.twig');
 		return new Response($html);
 	}
 }

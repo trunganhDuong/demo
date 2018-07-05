@@ -2,9 +2,3 @@ twig:
     paths: ['%kernel.project_dir%/templates']
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
-    globals:
-        projectConverter: '@App\Service\ProjectDataConverter'
-        contactConverter: '@App\Service\ContactConverter'
-        projectData: ''
-        contactData: ''
-        labelData: '%labelData%'
