@@ -1,0 +1,20 @@
+<section id="overview" class="probootstrap-section">
+    <div class="container">
+        <div class="row probootstrap-gutter60 mb50">
+            <div class="col-md-6">
+                <figure><img src="{{ asset('img/overview.jpg') }}" class="img-responsive"></figure>
+            </div>
+            <div class="col-md-6">
+                <h2 class="probootstrap-heading">Giới thiệu dự án </h2>
+                <p>
+                    {% if overview is defined %}
+                        {{ overview }}
+                    {% endif %}
+                </p>
+                <p><a href="#" class="btn btn-primary">Chi tiết</a></p>
+            </div>
+        </div>
+        {{ include('homepage/galery.html.twig') }}
+        {{ include('homepage/parner.html.twig') }}
+    </div>
+</section>
